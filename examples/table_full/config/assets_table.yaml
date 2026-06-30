@@ -1,0 +1,75 @@
+columns:
+  - key: name
+    title: 名称
+    cell_type: text
+    editable: true
+    searchable: true
+    width: 160
+
+  - key: asset_type
+    title: 类型
+    cell_type: combo
+    editable: true
+    searchable: true
+    options_from: asset_type_options
+    width: 100
+
+  - key: enabled
+    title: 启用
+    cell_type: check
+    editable: true
+    width: 70
+
+  - key: count
+    title: 数量
+    cell_type: spin
+    editable: true
+    min: 0
+    max: 999
+    width: 80
+
+  - key: due_date
+    title: 截止日期
+    cell_type: date
+    editable: true
+    display_format: yyyy-MM-dd
+    width: 120
+
+  - key: status
+    title: 状态
+    cell_type: badge
+    editable: false
+    searchable: true
+    badge_policy: status
+    width: 100
+
+  - key: progress
+    title: 进度
+    cell_type: progress
+    editable: false
+    min: 0
+    max: 100
+    width: 140
+
+  - key: detail_action
+    title: 详情
+    cell_type: button
+    editable: false
+    button_label: 详情
+    button_type: default
+    width: 70
+
+  - key: task_action
+    title: 任务
+    cell_type: button
+    editable: false
+    button_label: ""
+    width: 80
+
+  - key: action
+    title: 操作
+    cell_type: button
+    editable: false
+    button_label: 删除
+    button_type: danger
+    width: 90

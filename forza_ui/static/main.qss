@@ -1,0 +1,1272 @@
+/* public*/
+
+*{
+    font-family: @font_family;
+    color: @primary_text_color;
+    background-color: @background_color;
+    font-size: @font_size_base@font_unit;
+    selection-color: @text_color_inverse;
+    selection-background-color: @primary_color;
+}
+FDateTimeEdit::drop-down,
+FDateEdit::drop-down,
+FComboBox::drop-down {
+    subcontrol-origin: content;
+    subcontrol-position: center right;
+    image: url(@icon_down);
+}
+FDateTimeEdit[fui_size="@huge"]::drop-down,
+FDateEdit[fui_size="@huge"]::drop-down,
+FComboBox[fui_size="@huge"]::drop-down{
+    width: @huge@unit;
+    height: @huge_icon@unit;
+}
+FDateTimeEdit[fui_size="@large"]::drop-down,
+FDateEdit[fui_size="@large"]::drop-down,
+FComboBox[fui_size="@large"]::drop-down{
+    width: @large@unit;
+    height: @large_icon@unit;
+}
+FDateTimeEdit[fui_size="@medium"]::drop-down,
+FDateEdit[fui_size="@medium"]::drop-down,
+FComboBox[fui_size="@medium"]::drop-down{
+    width: @medium@unit;
+    height: @medium_icon@unit;
+}
+FDateTimeEdit[fui_size="@small"]::drop-down,
+FDateEdit[fui_size="@small"]::drop-down,
+FComboBox[fui_size="@small"]::drop-down{
+    width: @small@unit;
+    height: @small_icon@unit;
+}
+FDateTimeEdit[fui_size="@tiny"]::drop-down,
+FDateEdit[fui_size="@tiny"]::drop-down,
+FComboBox[fui_size="@tiny"]::drop-down{
+    width: @tiny@unit;
+    height: @tiny_icon@unit;
+}
+
+QAbstractButton[fui_size="@huge"],
+QAbstractSpinBox[fui_size="@huge"],
+QComboBox[fui_size="@huge"],
+QLineEdit[fui_size="@huge"]{
+    font-size: @font_size_large@font_unit;
+    border-radius: @border_radius_large@unit;
+    min-height: @huge@unit;
+    max-height: @huge@unit;
+}
+
+QAbstractButton[fui_size="@large"],
+QAbstractSpinBox[fui_size="@large"],
+QComboBox[fui_size="@large"],
+QLineEdit[fui_size="@large"]{
+    font-size: @font_size_large@font_unit;
+    border-radius: @border_radius_large@unit;
+    min-height: @large@unit;
+    max-height: @large@unit;
+}
+
+QAbstractButton[fui_size="@medium"],
+QAbstractSpinBox[fui_size="@medium"],
+QComboBox[fui_size="@medium"],
+QLineEdit[fui_size="@medium"]{
+    font-size: @font_size_base@font_unit;
+    border-radius: @border_radius_base@unit;
+    min-height: @medium@unit;
+    max-height: @medium@unit;
+}
+
+QAbstractButton[fui_size="@small"],
+QAbstractSpinBox[fui_size="@small"],
+QComboBox[fui_size="@small"],
+QLineEdit[fui_size="@small"]{
+    font-size: @font_size_base@font_unit;
+    border-radius: @border_radius_base@unit;
+    min-height: @small@unit;
+    max-height: @small@unit;
+}
+QAbstractButton[fui_size="@tiny"],
+QAbstractSpinBox[fui_size="@tiny"],
+QComboBox[fui_size="@tiny"],
+QLineEdit[fui_size="@tiny"]{
+    font-size: @font_size_small@font_unit;
+    border-radius: @border_radius_small@unit;
+    min-height: @tiny@unit;
+    max-height: @tiny@unit;
+}
+
+
+FComboBox[fui_size="@huge"]::drop-down{
+    height: @drop_down_huge@unit;
+}
+FComboBox[fui_size="@large"]::drop-down{
+    height: @drop_down_large@unit;
+}
+FComboBox[fui_size="@medium"]::drop-down{
+    height: @drop_down_medium@unit;
+}
+FComboBox[fui_size="@small"]::drop-down{
+    height: @drop_down_small@unit;
+}
+FComboBox[fui_size="@tiny"]::drop-down{
+    height: @drop_down_tiny@unit;
+}
+
+/* MCalendarWidget*/
+#qt_calendar_calendarview {
+    background: @background_color;
+}
+
+#qt_calendar_navigationbar {
+    background: @background_color;
+}
+
+QCalenderWidget > QToolButton {
+    icon-size: @drop_down_medium@unit, @drop_down_medium@unit;
+    width: @drop_down_large@unit;
+    height: @drop_down_large@unit;
+    background: @background_out_color;
+}
+
+QToolButton#qt_calendar_prevmonth {
+    qproperty-icon: url(@icon_left);
+}
+
+QToolButton#qt_calendar_nextmonth {
+    qproperty-icon: url(@icon_right);
+}
+
+QToolButton#qt_calendar_monthbutton {
+    padding-right: @drop_down_huge@unit;
+}
+
+QToolButton#qt_calendar_yearbutton {
+    padding-right: @drop_down_huge@unit;
+}
+
+QToolButton#qt_calendar_monthbutton::menu-indicator {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    right: @indicator_padding@unit;
+}
+
+QCalendarWidget QWidget {
+  alternate-background-color: @background_out_color;
+}
+
+
+/* QAbstractSpinBox */
+QAbstractSpinBox {
+    spacing: 4px;
+    border: 1px solid @border_color;
+    border-radius: 3px;
+    color: @primary_text_color;
+    background-color:@background_in_color;
+}
+
+QAbstractSpinBox:focus{
+    border: 1px solid @primary_color;
+}
+
+QAbstractSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    margin-top: 1px;
+    margin-right: 1px;
+    border-left: 1px solid @border_color;
+    background: @background_out_color;
+}
+
+QAbstractSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border-left: 1px solid @border_color;
+    border-top: 1px solid @border_color;
+    background: @background_out_color;
+}
+
+QAbstractSpinBox::up-button:hover,
+QAbstractSpinBox::down-button:hover {
+    border-left: 1px solid @primary_color;
+}
+
+QAbstractSpinBox::up-arrow {
+    image: url(@icon_up);
+}
+QAbstractSpinBox::down-arrow {
+    image: url(@icon_down);
+}
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off,
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off {
+    background-color: @disable_color;
+}
+QAbstractSpinBox[fui_size="@huge"]::up-button{
+    width: @spin_box_huge@unit;
+    border-top-right-radius: @border_radius_large@unit;
+}
+QAbstractSpinBox[fui_size="@huge"]::down-button{
+    width: @spin_box_huge@unit;
+    border-bottom-right-radius: @border_radius_large@unit;
+}
+QAbstractSpinBox[fui_size="@large"]::up-button{
+    width: @spin_box_large@unit;
+    border-top-right-radius: @border_radius_large@unit;
+}
+QAbstractSpinBox[fui_size="@large"]::down-button{
+    width: @spin_box_large@unit;
+    border-bottom-right-radius: @border_radius_large@unit;
+}
+QAbstractSpinBox[fui_size="@medium"]::up-button{
+    width: @spin_box_medium@unit;
+    border-top-right-radius: @border_radius_base@unit;
+}
+QAbstractSpinBox[fui_size="@medium"]::down-button{
+    width: @spin_box_medium@unit;
+    border-bottom-right-radius: @border_radius_base@unit;
+}
+QAbstractSpinBox[fui_size="@small"]::up-button{
+    width: @spin_box_small@unit;
+    border-top-right-radius: @border_radius_small@unit;
+}
+QAbstractSpinBox[fui_size="@small"]::down-button{
+    width: @spin_box_small@unit;
+    border-bottom-right-radius: @border_radius_small@unit;
+}
+QAbstractSpinBox[fui_size="@tiny"]::up-button{
+    width: @spin_box_tiny@unit;
+    border-top-right-radius: @border_radius_small@unit;
+}
+QAbstractSpinBox[fui_size="@tiny"]::down-button{
+    width: @spin_box_tiny@unit;
+    border-bottom-right-radius: @border_radius_small@unit;
+}
+QAbstractSpinBox[fui_size="@huge"]::up-arrow,
+QAbstractSpinBox[fui_size="@huge"]::down-arrow {
+    width: @spin_box_icon_huge@unit;
+    height: @spin_box_icon_huge@unit;
+}
+QAbstractSpinBox[fui_size="@large"]::up-arrow,
+QAbstractSpinBox[fui_size="@large"]::down-arrow {
+    width: @spin_box_icon_large@unit;
+    height: @spin_box_icon_large@unit;
+}
+QAbstractSpinBox[fui_size="@medium"]::up-arrow,
+QAbstractSpinBox[fui_size="@medium"]::down-arrow {
+    width: @spin_box_icon_medium@unit;
+    height: @spin_box_icon_medium@unit;
+}
+QAbstractSpinBox[fui_size="@small"]::up-arrow,
+QAbstractSpinBox[fui_size="@small"]::down-arrow {
+    width: @spin_box_icon_small@unit;
+    height: @spin_box_icon_small@unit;
+}
+QAbstractSpinBox[fui_size="@tiny"]::up-arrow,
+QAbstractSpinBox[fui_size="@tiny"]::down-arrow {
+    width: @spin_box_icon_tiny@unit;
+    height: @spin_box_icon_tiny@unit;
+}
+FDateTimeEdit::drop-down, FDateEdit::drop-down{
+    subcontrol-origin: border;
+    subcontrol-position: center right;
+    image: url(@icon_calender);
+}
+
+/* FAlert */
+FAlert{
+    border: 1px solid @border_color;
+    border-radius: @border_radius_base@unit;
+}
+FAlert[fui_type=info]{
+    border-color: @info_3;
+    background-color: @info_1;
+}
+FAlert[fui_type=success]{
+    border-color: @success_3;
+    background-color: @success_1;
+}
+FAlert[fui_type=warning]{
+    border-color: @warning_3;
+    background-color: @warning_1;
+}
+FAlert[fui_type=error]{
+    border-color: @error_3;
+    background-color: @error_1;
+}
+
+/* FAvatar*/
+FAvatar{
+    background-color: transparent;
+}
+
+/*FBadge*/
+FBadge{
+    margin: 0;
+}
+FBadge > QPushButton{
+    font-size:9@font_unit;
+    min-height:@badge_width@unit;
+    max-height:@badge_width@unit;
+    min-width:@badge_width@unit;
+    border-radius: @badge_width_radius@unit;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight:bold;
+    margin: 0;
+}
+
+FBadge[fui_dot=true] > QPushButton{
+    min-height:@badge_dot@unit;
+    max-height:@badge_dot@unit;
+    min-width:@badge_dot@unit;
+    max-width:@badge_dot@unit;
+    border-radius: @badge_dot_radius@unit;
+    padding: 0 0;
+}
+
+/* FToolButton*/
+FToolButton {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+FToolButton:hover{
+    color: @primary_5;
+}
+FToolButton:pressed{
+    color: @primary_7;
+}
+FToolButton:disabled{
+    background-color: @disable_color;
+}
+
+FTaobaoButton{
+    border-radius: 2px;
+    border: 1px solid @border_color;
+}
+FTaobaoButton:hover{
+    color: @primary_5;
+    border: 1px solid @primary_5;
+}
+FTaobaoButton:checked{
+    color: @primary_color;
+    border: 2px solid @primary_color;
+}
+
+FBlockButton{
+    border-radius: 0;
+    padding: 1% 10%;
+    border:none;
+}
+FBlockButton:hover{
+    color: @primary_color;
+    background-color:@background_in_color;
+}
+FBlockButton:checked{
+    color: @primary_color;
+    background-color:@background_in_color;
+}
+
+FUnderlineButton{
+    border-radius: 0;
+    padding: 1% 10%;
+    border-color: transparent;
+}
+FUnderlineButton:hover{
+    border-radius: 0;
+    color: @primary_5;
+    border: none;
+}
+FUnderlineButton:checked{
+    border-radius: 0;
+    color: @primary_color;
+    border-style: solid;
+    border-color: @primary_color;
+    border-width: 0 0 2px 0;
+}
+
+
+FToolButton[combine=horizontal]{
+    border-radius: 0;
+}
+FToolButton[combine=vertical]{
+    border-radius: 0;
+}
+
+FToolButton[fui_size="@huge"], FPushButton[fui_size="@huge"]{
+    qproperty-iconSize: @huge_icon@unit  @huge_icon@unit;
+}
+FToolButton[fui_size="@large"], FPushButton[fui_size="@large"]{
+    qproperty-iconSize: @large_icon@unit  @large_icon@unit;
+}
+FToolButton[fui_size="@medium"], FPushButton[fui_size="@medium"]{
+    qproperty-iconSize: @medium_icon@unit @medium_icon@unit;
+}
+FToolButton[fui_size="@small"], FPushButton[fui_size="@small"]{
+    qproperty-iconSize: @small_icon@unit @small_icon@unit;
+}
+FToolButton[fui_size="@tiny"], FPushButton[fui_size="@tiny"]{
+    qproperty-iconSize: @tiny_icon@unit @tiny_icon@unit;
+}
+
+
+FToolButton::menu-indicator {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    right: @indicator_padding@unit;
+    bottom: @indicator_padding@unit;
+    image: url(@icon_down);
+}
+
+FDragFileButton, FDragFolderButton{
+    color: @primary_text_color;
+    background-color: @background_color;
+    border: @drag_border@unit dashed @border_color;
+    border-radius: @drag_border_radius@unit;
+    padding: @drag_padding_x@unit @drag_padding_y@unit;
+}
+FDragFileButton:hover, FDragFolderButton:hover{
+    color: @primary_color;
+    border-color: @primary_5;
+}
+FDragFileButton:pressed, FDragFolderButton:pressed{
+    color: @primary_color;
+    border-color: @primary_7;
+}
+
+/* FCheckBox */
+FCheckBox {
+    spacing: @check_box_spacing@unit;
+}
+FCheckBox:disabled {
+    color: @disable_color;
+}
+
+
+FMenu::indicator:non-exclusive,
+FBigView::indicator,
+FListView::indicator,
+FTreeView::indicator,
+MColumnView::indicator,
+FTableView::indicator,
+FCheckBox::indicator{
+    width: @check_box_size@unit;
+    height: @check_box_size@unit;
+    border-radius: 2px;
+    border: 1px solid @border_color;
+    background-color: @background_in_color;
+}
+FMenu::indicator:non-exclusive:disabled,
+FBigView::indicator:disabled,
+FListView::indicator:disabled,
+FTreeView::indicator:disabled,
+MColumnView::indicator:disabled,
+FTableView::indicator:disabled,
+FCheckBox::indicator:disabled{
+    border: 1px solid @border_color;
+    background-color: @background_selected_color;
+}
+FMenu::indicator:non-exclusive:hover,
+FBigView::indicator:hover,
+FListView::indicator:hover,
+FTreeView::indicator:hover,
+MColumnView::indicator:hover,
+FTableView::indicator:hover,
+FCheckBox::indicator:hover{
+    border: 1px solid @primary_5;
+    background-color: @background_in_color;
+}
+FMenu::indicator:non-exclusive:checked,
+FBigView::indicator:checked,
+FListView::indicator:checked,
+FTreeView::indicator:checked,
+MColumnView::indicator:checked,
+FTableView::indicator:checked,
+FCheckBox::indicator:checked{
+    background-color: @primary_color;
+    image: url(@icon_check);
+}
+FMenu::indicator:non-exclusive:checked:disabled,
+FBigView::indicator:checked:disabled,
+FListView::indicator:checked:disabled,
+FTreeView::indicator:checked:disabled,
+MColumnView::indicator:checked:disabled,
+FTableView::indicator:checked:disabled,
+FCheckBox::indicator:checked:disabled{
+    background-color: @disable_color;
+}
+
+FBigView::indicator:indeterminate,
+FListView::indicator:indeterminate,
+FTreeView::indicator:indeterminate,
+MColumnView::indicator:indeterminate,
+FTableView::indicator:indeterminate,
+FCheckBox::indicator:indeterminate {
+    background-color: @primary_color;
+    image: url(@icon_minus);
+}
+
+FBigView::indicator:indeterminate:disabled,
+FListView::indicator:indeterminate:disabled,
+FTreeView::indicator:indeterminate:disabled,
+MColumnView::indicator:indeterminate:disabled,
+FTableView::indicator:indeterminate:disabled,
+FCheckBox::indicator:indeterminate:disabled {
+    background-color: @disable_color;
+}
+
+
+/* FPushButton */
+FPushButton {
+    font-weight: 400;
+    border-radius: 5%;
+    padding: 1% 10%;
+}
+
+FPushButton[fui_type=default]{
+    background-color: @background_out_color;
+    border: 1px solid @border_color;
+}
+FPushButton[fui_type=default]:hover{
+    /*color: @primary_5;*/
+    border-color: @primary_5;
+}
+FPushButton[fui_type=default]:pressed{
+    /*color: @primary_7;*/
+    border-color: @primary_7;
+}
+
+
+FPushButton[fui_type=primary]{
+    border: none;
+    color: @text_color_inverse;
+    background-color: @primary_color;
+}
+FPushButton[fui_type=primary]:hover{
+    background-color: @primary_5;
+}
+FPushButton[fui_type=primary]:pressed{
+    background-color: @primary_7;
+}
+
+
+FPushButton[fui_type=success]{
+    border: none;
+    color: @text_color_inverse;
+    background-color: @success_6;
+}
+FPushButton[fui_type=success]:hover{
+    background-color: @success_5;
+}
+FPushButton[fui_type=success]:pressed{
+    background-color: @success_7;
+}
+
+
+FPushButton[fui_type=warning]{
+    border: none;
+    color: @text_color_inverse;
+    background-color: @warning_6;
+}
+FPushButton[fui_type=warning]:hover{
+    background-color: @warning_5;
+}
+FPushButton[fui_type=warning]:pressed{
+    background-color: @warning_7;
+}
+
+
+FPushButton[fui_type=danger]{
+    border: none;
+    color: white;
+    background-color: @error_6;
+}
+FPushButton[fui_type=danger]:hover{
+    background-color: @error_5;
+}
+FPushButton[fui_type=danger]:pressed{
+    background-color: @error_7;
+}
+
+FPushButton[combine=horizontal][position=left],
+FComboBox[combine=horizontal][position=left]{
+    margin-left: 1px;
+    border-left: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+FPushButton[combine=horizontal][position=right],
+FComboBox[combine=horizontal][position=right]{
+    border-right: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+FPushButton[combine=horizontal][position=center],
+FComboBox[combine=horizontal][position=center]{
+    /*border: none;*/
+    border-radius: 0;
+}
+FPushButton[combine=vertical][position=top],
+FComboBox[combine=vertical][position=top]{
+    border-top: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+FPushButton[combine=vertical][position=bottom],
+FComboBox[combine=vertical][position=bottom]{
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+FPushButton:disabled{
+    color: @disable_color;
+    border: 2px dashed @disable_color;
+    background-color: @background_color;
+}
+
+FPushButton::menu-indicator {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    right: @indicator_padding@unit;
+    bottom: @indicator_padding@unit;
+    image: url(@icon_down);
+}
+
+/*FRadioButton*/
+FRadioButton {
+    spacing: @radio_spacing@unit;
+}
+FRadioButton:disabled {
+    color: @disable_color;
+}
+
+FMenu::indicator:exclusive,
+FRadioButton::indicator{
+    width: @radio_size@unit;
+    height: @radio_size@unit;
+    border-radius: @radio_radius@unit;
+    border: 1px solid @border_color;
+    background-color: @background_in_color;
+}
+FMenu::indicator:exclusive:disabled,
+FRadioButton::indicator:disabled{
+    border: 1px solid @border_color;
+    background-color: @background_selected_color;
+}
+
+FMenu::indicator:exclusive:hover,
+FRadioButton::indicator:hover{
+    border: 1px solid @primary_5;
+}
+FMenu::indicator:exclusive:checked,
+FRadioButton::indicator:checked{
+    background-color: @primary_color;
+    image: url(@icon_circle);
+}
+FMenu::indicator:exclusive:checked:disabled,
+FRadioButton::indicator:checked:disabled{
+    background-color: @disable_color;
+}
+
+
+/*FSwitch*/
+FSwitch::indicator{
+    subcontrol-origin: border;
+    subcontrol-position: center left;
+    image: url(@icon_sphere);
+}
+FSwitch[fui_size="@huge"]::indicator{
+    width: @switch_width_huge@unit;
+    height: @switch_height_huge@unit;
+    border-radius: @switch_radius_huge@unit;
+}
+FSwitch[fui_size="@large"]::indicator{
+    width: @switch_width_large@unit;
+    height: @switch_height_large@unit;
+    border-radius: @switch_radius_large@unit;
+}
+FSwitch[fui_size="@medium"]::indicator{
+    width: @switch_width_medium@unit;
+    height: @switch_height_medium@unit;
+    border-radius: @switch_radius_medium@unit;
+}
+FSwitch[fui_size="@small"]::indicator{
+    width: @switch_width_small@unit;
+    height: @switch_height_small@unit;
+    border-radius: @switch_radius_small@unit;
+}
+FSwitch[fui_size="@tiny"]::indicator{
+    width: @switch_width_tiny@unit;
+    height: @switch_height_tiny@unit;
+    border-radius: @switch_radius_tiny@unit;
+}
+FSwitch::indicator:checked{
+    image-position: center right;
+    background-color: @primary_color;
+}
+FSwitch::indicator:unchecked{
+    image-position: center left;
+    background-color: @background_selected_color;
+}
+FSwitch::indicator:disabled{
+    background-color: @disable_color;
+}
+
+FComboBox{
+    border: 1px solid @border_color;
+    background-color: @background_in_color;
+}
+QCombBox > QLineEdit{
+    background-color: red;
+}
+
+FComboBox:focus{
+    border: 1px solid @primary_5;
+}
+FComboBox:hover{
+    border: 1px solid @primary_7;
+}
+FComboBox:disabled{
+    color: @disable_color;
+}
+/* FLabel */
+FLabel{
+    padding: 2px;
+    background-color: transparent;
+    font-size: @font_size_base@font_unit;
+    color: @primary_text_color;
+    font-weight: 400;
+}
+FLabel[fui_level="1"]{
+    font-size: @h1_size@font_unit;
+    font-weight: 500;
+    color: @title_color;
+}
+FLabel[fui_level="2"]{
+    font-size: @h2_size@font_unit;
+    font-weight: 500;
+    color: @title_color;
+}
+FLabel[fui_level="3"]{
+    font-size: @h3_size@font_unit;
+    font-weight: 500;
+    color: @title_color;
+}
+FLabel[fui_level="4"]{
+    font-size: @h4_size@font_unit;
+    font-weight: 500;
+    color: @title_color;
+}
+
+
+FLabel[fui_underline=true]{
+    text-decoration: underline;
+}
+FLabel[fui_delete=true]{
+    text-decoration: line-through;
+}
+FLabel[fui_strong=true]{
+    font-weight: bold;
+}
+FLabel[fui_code=true]{
+    background-color: @background_out_color;
+    border: 1px solid @border_color;
+}
+FLabel[fui_mark=true]{
+    background-color: @warning_1;
+}
+
+FLabel[fui_type=danger]{
+    color: @error_6;
+}
+FLabel[fui_type=warning]{
+    color: @warning_6;
+}
+FLabel[fui_type=secondary]{
+    color: @secondary_text_color;
+}
+
+FLabel:disabled{
+    color:@disable_color;
+}
+
+FMessage,
+FDrawer{
+    padding: 2px;
+    border: 1px solid @border_color;
+    border-radius: 2px;
+    background-color: @background_color;
+}
+
+
+FToast{
+    background-color: @toast_color;
+}
+
+FToast QLabel{
+    color: @text_color_inverse;
+    background-color: transparent;
+}
+
+FSectionItem{
+    border: 1px solid @border_color;
+    border-radius: 2px;
+    background-color: @background_color;
+}
+QWidget#title {
+    background-color: @background_out_color;
+}
+FTextEdit {
+    border-radius: @border_radius_base@unit;
+}
+FLineEdit,
+FTextEdit{
+    border: 1px solid @border_color;
+    background-color: @background_in_color;
+}
+
+FLineEdit:focus,
+FTextEdit:focus{
+    border: 1px solid @primary_color;
+}
+
+FLineEdit[fui_type=error]{
+    color: @error_5;
+}
+FLineEdit[fui_type=error]:focus{
+    border: 1px solid @error_5;
+}
+FLineEdit:disabled{
+    color: @disable_color;
+}
+
+FTabWidget::pane { /* The tab widget frame */
+    border: 1px solid @border_color;
+    border-radius: 3px;
+    top: -1px;
+    background-color: @background_color;
+}
+FTabWidget::tab-bar {
+}
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+FTabBar::tab {
+    border: 1px solid @border_color;
+    border-bottom: none;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-color: @background_in_color;
+}
+
+QTabBar::tab:selected{
+    border-bottom: none;
+    color: @primary_color;
+    background-color: @background_color;
+}
+QTabBar::tab:!selected {
+    margin-top: 2px;
+    border-bottom: 1px solid @border_color;
+}
+
+FTabBar::tab:hover {
+    color: @primary_color;
+}
+FTabBar::close-button {
+    subcontrol-origin: content;
+    subcontrol-position: right center;
+    right: @indicator_padding@unit;
+    image: url(@icon_close);
+}
+FTabBar::close-button:hover {
+    border: 1px solid @primary_color;
+}
+
+FTabBar QToolButton {
+    border: 1px solid @border_color;
+}
+FTabBar QToolButton:hover {
+    border: 1px solid @primary_5;
+}
+FTabBar QToolButton:disabled {
+    background-color: @disable_color;
+}
+FTabBar QToolButton::right-arrow {
+    image: url(@icon_right);
+}
+
+FTabBar QToolButton::left-arrow {
+    image: url(@icon_left);
+}
+
+/* FHeaderView */
+FHeaderView {
+    background-color: @background_out_color;
+    color: @title_color;
+}
+FHeaderView::section{
+    background-color: @background_out_color;
+    border: 0 solid @border_color;
+    padding: 1px @indicator_padding@unit;
+}
+
+
+FHeaderView[grid=true][orientation=horizontal]::section{
+    border-right: 1px solid @border_color;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+FHeaderView[grid=true][orientation=vertical]::section{
+    border-bottom: 1px solid @border_color;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+FHeaderView::section:hover {
+    color: @primary_color;
+}
+
+FHeaderView::up-arrow {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    right: @indicator_padding@unit;
+    image: url(@icon_up);
+}
+
+FHeaderView::down-arrow {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    right: @indicator_padding@unit;
+    image: url(@icon_down);
+}
+FListView[fui_size="@huge"]::item{
+    min-height: @huge@unit;
+    max-height: @huge@unit;
+}
+FListView[fui_size="@large"]::item{
+    min-height: @large@unit;
+    max-height: @large@unit;
+}
+FListView[fui_size="@medium"]::item{
+    min-height: @medium@unit;
+    max-height: @medium@unit;
+}
+FListView[fui_size="@small"]::item{
+    min-height: @small@unit;
+    max-height: @small@unit;
+}
+
+FBigView,
+FListView,
+FTreeView,
+MColumnView,
+FTableView{
+    background-color: @background_in_color;
+    alternate-background-color: @background_color;
+    border: 1px solid @border_color;
+    padding: 0;
+    gridline-color: @border_color;
+}
+
+FBigView::item:hover,
+FListView::item:hover,
+FTreeView::item:hover,
+MColumnView::item:hover,
+FTableView::item:hover{
+    color: @text_color_inverse;
+    background-color: @primary_5;
+}
+
+FBigView::item:selected,
+FListView::item:selected,
+FTreeView::item:selected,
+MColumnView::item:selected,
+FTableView::item:selected{
+    background-color: @primary_color;
+    color: @text_color_inverse;
+}
+
+FTableView QTableCornerButton::section {
+    background-color: @background_out_color;
+    border: 0px solid @border_color;
+    border-right: 1px solid @border_color;
+    border-bottom: 1px solid @border_color;
+}
+
+QScrollBar:horizontal {
+    border: 0 solid @border_color;
+    height: @indicator_size@unit;
+    margin: 0 @scroll_bar_margin@unit 0 0;
+    background-color: @border_color;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: @background_selected_color;
+    border-radius: @scroll_bar_radius@unit;
+}
+
+QScrollBar::add-line:horizontal {
+    subcontrol-origin: margin;
+    subcontrol-position: right center;
+    background: @border_color;
+    width: @scroll_bar_size@unit;
+}
+
+QScrollBar::sub-line:horizontal {
+    subcontrol-origin: margin;
+    subcontrol-position: right center;
+    background: @border_color;
+    width: @scroll_bar_size@unit;
+    right: @scroll_bar_size@unit;
+}
+
+QScrollBar::left-arrow:horizontal {
+    subcontrol-origin: margin;
+    subcontrol-position: center center;
+    image: url(@icon_left);
+}
+
+QScrollBar::right-arrow:horizontal {
+    subcontrol-origin: margin;
+    subcontrol-position: center center;
+    image: url(@icon_right);
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+QScrollBar:vertical {
+    border: 0 solid @border_color;
+    width: @indicator_size@unit;
+    margin: 0 0 @scroll_bar_margin@unit 0 ;
+    background-color: @border_color;
+}
+
+QScrollBar::handle:vertical {
+    background-color: @background_selected_color;
+    min-height: @scroll_bar_min_length@unit;
+}
+
+QScrollBar::add-line:vertical {
+    subcontrol-origin: margin;
+    subcontrol-position: center bottom;
+    background: @border_color;
+    height: @scroll_bar_size@unit;
+}
+
+QScrollBar::sub-line:vertical {
+    subcontrol-origin: margin;
+    subcontrol-position: center bottom;
+    background: @border_color;
+    height: @scroll_bar_size@unit;
+    bottom: @scroll_bar_size@unit;
+}
+
+QScrollBar::up-arrow:vertical {
+    position: relative;
+    image: url(@icon_up)
+}
+
+QScrollBar::down-arrow:vertical {
+    position: relative;
+    image: url(@icon_down)
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QSplitter::handle {
+    background-color: @border_color;
+    image: url(@icon_splitter)
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+FMenuTabWidget QWidget#bar_widget{
+    background: @background_out_color;
+    spacing: 3px;
+    border-radius: 0;
+}
+FMenuTabWidget[fui_size="@huge"] QWidget#bar_widget{
+    height: @huge@unit;
+}
+FMenuTabWidget[fui_size="@large"] QWidget#bar_widget{
+    height: @large@unit;
+}
+FSlider::groove:horizontal {
+    border-radius: @slider_radius@unit;
+    height: @slider_height@unit;
+}
+
+FSlider::handle {
+    background: @background_in_color;
+    border: 2px solid @primary_color;
+    width: @slider_handle_size@unit;
+    height: @slider_handle_size@unit;
+    border-radius: @slider_handle_radius@unit;
+}
+FSlider::handle:disabled{
+    border-color: @disable_color;
+}
+
+FSlider::handle:horizontal {
+    margin: -@slider_height@unit 0;
+}
+FSlider::groove:vertical {
+    border-radius: @slider_radius@unit;
+    width: @slider_height@unit;
+}
+
+FSlider::handle:vertical {
+    margin: 0 -@slider_height@unit;
+}
+
+FSlider::add-page:horizontal {
+    background: @border_color;
+}
+
+FSlider::sub-page:horizontal {
+    background: @primary_color;
+}
+FSlider::sub-page:disabled{
+    background: @disable_color;
+}
+FSlider::add-page:vertical {
+    background: @primary_color;
+}
+
+FSlider::sub-page:vertical {
+    background: @border_color;
+}
+FDockWidget {
+    font-size: @h3_size@font_unit;
+    font-weight: 500;
+    color: @title_color;
+    titlebar-close-icon: url(@icon_close);
+    titlebar-normal-icon: url(@icon_float);
+
+}
+FDockWidget::title {
+    background: @background_selected_color;
+    text-align: left;
+    padding-left: @indicator_padding@unit;
+}
+
+FDockWidget::close-button {
+    subcontrol-origin: margin;
+    subcontrol-position: right center;
+    right: @indicator_padding@unit;
+}
+
+FDockWidget::float-button {
+    subcontrol-origin: margin;
+    subcontrol-position: right center;
+    right: @scroll_bar_margin@unit;
+}
+FDockWidget::close-button:hover, FDockWidget::float-button:hover {
+    border: 1px solid @primary_color;
+}
+
+FProgressBar {
+    font-size: @font_size_base@font_unit;
+    color: @primary_text_color;
+    border: 0 solid @border_color;
+    background-color: @border_color;
+    min-height: @progress_bar_size@unit;
+    max-height: @progress_bar_size@unit;
+    border-radius: @progress_bar_radius@unit;
+}
+
+FProgressBar::chunk {
+    min-height: @progress_bar_size@unit;
+    max-height: @progress_bar_size@unit;
+    border-radius: @progress_bar_radius@unit;
+}
+FProgressBar[fui_status=error]::chunk {
+    background-color: @error_6;
+}
+FProgressBar[fui_status=success]::chunk {
+    background-color: @success_6;
+}
+FProgressBar[fui_status=primary]::chunk {
+    background-color: @primary_color;
+}
+
+FMenu {
+    background-color: @background_color;
+    padding: 0;
+    border-radius: 2px;
+    border: 1px solid @border_color;
+}
+FMenu[checked=true]{
+    color: @primary_color;
+    background-color: @background_out_color;
+}
+FMenu::item {
+    padding: 2px 2px;
+}
+FMenu::item {
+    padding: @indicator_padding@unit auto;
+}
+FMenu::item:checked  {
+    color: @primary_color;
+    background-color: @background_out_color;
+}
+FMenu::item:selected  {
+    background-color: @background_out_color;
+}
+
+FMenu::indicator {
+    left: @indicator_padding@unit;
+}
+
+QToolTip {
+    border: none;
+    background-color: @background_selected_color;
+}
+
+FLoading {
+    background-color: transparent;
+}
+
+FLoadingWrapper #mask{
+    background-color: @mask_color;
+}
+
+
+FCard[border=true]{
+    border: 1px solid @border_color;
+    border-radius: @border_radius_small@unit;
+}
+FCard[border=false]{
+    border: 0 solid @border_color;
+    border-radius: @border_radius_small@unit;
+    background-color: @background_in_color;
+}
+
+FMeta {
+    border: 1px solid @border_color;
+    border-radius: @border_radius_small@unit;
+    background-color: @background_in_color;
+}
+
+FSizeGrip {
+    background-color: transparent;
+    image: url(@icon_size_grip);
+}
